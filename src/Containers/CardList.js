@@ -4,11 +4,11 @@ import './CardList.css';
 
 const CardList = ({ items }) => {
 	return (
-	  <div className='cardlist' key={i}>
+	  <div className='cardlist'>
 		{
 		  items.map((user, i) => {
 			return (
-			  <div>	
+			  <div key={i}>	
 			  <Card  
 			    image={items[i].image}
 			    title={items[i].title} 
