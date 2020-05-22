@@ -1,0 +1,40 @@
+ .sidebar {
+ 	display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    text-align: center;
+	/*width: 400px;
+	height: 600px;*/
+	border: solid darkgray 5px;
+	position: absolute;
+	background-color: white;
+	right: 0;
+	top: 0;
+	z-index: 2;
+}
+
+
+.sidebar h1 {
+	position: relative;
+	font-size: 40px;
+	color: black;
+	font-family: didot;
+	margin-top: 58px;
+}
+
+.list.li {
+	list-style-type: none;
+}
+
+.sidebar button {
+	margin-top: 350px;
+	width: 300px;
+	height: 45px;
+	font-size: 25px;
+	border: 2px solid black;
+	font-weight: bold;
+	color: black;
+	font-family: didot;
+	text-align: center;
+}

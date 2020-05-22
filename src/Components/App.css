@@ -1,0 +1,38 @@
+.open {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+  text-align: center;
+}
+
+.header {
+	display: flex;
+	justify-content: center;
+	width: 100%;
+	align-items: center;
+  margin-bottom: 30px;
+}
+
+.logo {  
+  position: absolute;
+  text-align: center;
+  margin-top: 5px; 
+  font-family: didot;
+  color: gray;
+  font-size: 60px;
+}
+
+img {
+  margin-bottom: 40px;
+  width: 100%;
+}
+
+.tags {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  font-size: 25px;
+  color: gray;
+  font-family: didot;
+}

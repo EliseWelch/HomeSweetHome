@@ -1,0 +1,9 @@
+.cart {
+	width: 35px;
+	height: 35px;
+	margin-top: 65px;
+	position: relative;
+	z-index: 2;
+}
+
+

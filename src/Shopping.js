@@ -3,13 +3,12 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './Components/App';
 import * as serviceWorker from './serviceWorker';
-import 'tachyons';
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+  	<App />
   </React.StrictMode>,
-  document.getElementById('root')
+  document.getElementById('cartpage')
 );
 
 // If you want your app to work offline and load faster, you can change

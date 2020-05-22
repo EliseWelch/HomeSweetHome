@@ -1,0 +1,16 @@
+.card {
+	background-color: lightgray;
+	width: 300px;
+	height: 550px;
+	text-align: center;
+	font-family: didot;
+	font-size: 25px;
+	margin: 15px;
+}
+
+.image {
+	width: 215px;
+	height: 215px;
+	margin-top: 40px;
+}
+
