@@ -4,13 +4,12 @@ import './CardList.css';
 
 const CardList = ({ items }) => {
 	return (
-	  <div className='cardlist'>
+	  <div className='cardlist' key={i}>
 		{
 		  items.map((user, i) => {
 			return (
 			  <div>	
-			  <Card 
-			    key={i} 
+			  <Card  
 			    image={items[i].image}
 			    title={items[i].title} 
 			    price={items[i].price} 
