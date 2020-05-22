@@ -1,16 +1,15 @@
 import React from 'react';
 import './Cart.css';
-import cart from '../icons/cart.png';
 
 const Cart = (props) => {
 	return (
-		<div>
-		  <a href='/' onClick={props.sideBarClickHandler}>
-		    <img className='cart' alt='' src={cart} />
-		  </a>  
+		<div className='cart-container'>
+		  <button className='cart-btn' href='/' onClick={props.sideBarClickHandler}>
+		  	<p>0</p>
+		  </button>  
 		</div>
 	)
 };
 
-
+ 
 export default Cart;

@@ -1,9 +1,26 @@
-.cart {
+.cart-container {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+
+.cart-btn {
+	background: url(../icons/cart2.png) no-repeat;
 	width: 35px;
 	height: 35px;
-	margin-top: 65px;
-	position: relative;
+	margin-right: 40px;
+	position: absolute;
 	z-index: 2;
+	border: 0;
+	padding: 0;
+}
+
+.cart-btn p {
+	font-family: didot;
+	color: gray;
+	font-size: 18px;
+	margin-top: 0px;
+	text-align: center;
 }
 
 

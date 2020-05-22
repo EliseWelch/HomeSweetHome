@@ -10,8 +10,8 @@
 	display: flex;
 	justify-content: center;
 	width: 100%;
+  height: 100%;
 	align-items: center;
-  margin-bottom: 30px;
 }
 
 .logo {  
@@ -29,6 +29,7 @@ img {
 }
 
 .tags {
+  margin-bottom: 20px;
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;

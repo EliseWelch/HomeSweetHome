@@ -11,6 +11,19 @@
 .image {
 	width: 215px;
 	height: 215px;
-	margin-top: 40px;
+	margin-top: 42px;
+	margin-bottom: 0px;
+}
+
+.card-btn {
+	font-size: 20px;
+	border-radius: 300px;
+	width: 200px;
+	height: 30px;
+	border: 1px solid black;
+	font-weight: bold;
+	color: black;
+	font-family: didot;
+	text-align: center;
 }
 
