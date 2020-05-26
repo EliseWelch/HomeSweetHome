@@ -2,13 +2,39 @@
 	width: 400px;
 	height: 600px;
 	border: solid darkgray 5px;
-	position: absolute;
+	position: fixed;
 	background-color: white;
 	right: 0;
 	top: 0;
 	z-index: 2;
+	/*transform: translateX(-100%);
+	transition: transform 0.3s ease-out;*/
+	animation-name: slidein;
+	animation-duration: 0.3s;
+	box-shadow: 0px 0px 3px 3px darkgray;
 }
 
+/*.sidebar.open {
+	transform: translateX(0);
+}*/
+
+@keyframes slidein {
+	0% {
+		margin-right: -400px;
+	}
+	25% {
+		margin-right: -300px;
+	}
+	50% {
+		margin-right: -200px;
+	}
+	75% {
+		margin-right: -100px;
+	}
+	100% {
+		margin-right: 0px;
+	}
+}
 
 .sidebar h1 {
 	position: relative;
@@ -32,4 +58,12 @@
 	color: black;
 	font-family: didot;
 	text-align: center;
+}
+
+.sidebar button:focus {
+	outline: none;
+}
+
+.sidebar button:hover {
+	cursor: pointer;
 }

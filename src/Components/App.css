@@ -1,3 +1,8 @@
+/*.app {
+  height: 100%;
+  width: 100%;
+}
+*/
 .open {
   display: flex;
   align-items: center;
@@ -10,7 +15,7 @@
 	display: flex;
 	justify-content: center;
 	width: 100%;
-  height: 100%;
+  height: 250px;
 	align-items: center;
 }
 
@@ -20,20 +25,10 @@
   margin-top: 5px; 
   font-family: didot;
   color: gray;
-  font-size: 60px;
+  font-size: 80px;
 }
 
 img {
   margin-bottom: 40px;
   width: 100%;
-}
-
-.tags {
-  margin-bottom: 20px;
-  display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
-  font-size: 25px;
-  color: gray;
-  font-family: didot;
 }
