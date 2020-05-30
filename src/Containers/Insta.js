@@ -4,7 +4,7 @@ import './Insta.css';
 
 const Insta = () => {
 	return (
-		<div>
+		<div className='insta-btn-container'>
 		  <button className='insta-btn' href='/'></button>
 		</div>
 	)

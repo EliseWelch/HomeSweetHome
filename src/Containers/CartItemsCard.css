@@ -1,0 +1,23 @@
+.cartItemsCard {
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	width: 200px;
+	height: 250px;
+	text-align: center;
+	font-family: didot;
+	font-size: 10px;
+	margin: 15px;
+};
+
+
+
+.addedItems {
+
+};
+
+
+.addedItemImage {
+	width: 100px;
+	height: 100px;
+};

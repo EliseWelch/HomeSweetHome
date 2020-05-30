@@ -1,5 +1,13 @@
+.insta-btn-container {
+	height: 25px;
+	width: 25px;
+	margin-right: 1300px;
+	margin-top: 25px;
+}
+
 .insta-btn {
 	background-image: url(../icons/insta2.png);
+	background-color: white;
 	margin-right: 1300px;
 	width: 25px;
 	height: 25px;
