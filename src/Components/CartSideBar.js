@@ -1,7 +1,7 @@
 import React from 'react';
 import './CartSideBar.css';
 import CartItemsCard from '../Containers/CartItemsCard';
-import items2 from '../items2';
+import products from '../products';
 
 
 const CartSideBar = (props) => {	
@@ -15,20 +15,19 @@ const CartSideBar = (props) => {
   		<div className={sidebarClasses}>
   			<h1 className=''>Cart</h1>
         <div className='items'>
-  			  <ul>
+  			  <ul className='cartItemsCard'>
               <li className='cartItemsList'>
-                  {props.add.items2.map((user, i) => {
+                  {props.add.products.map((user, i) => {
                   return (
-                  <div key={i}> 
-                  <CartItemsCard className='cartItemsCard'
-                    image={items2[i].image}
-                    title={items2[i].title} 
-                    price={items2[i].price} 
-                    tag={items2[i].tag}
+                  <div key={i} className='cartItemsLi'> 
+                  <CartItemsCard
+                    image={products[i].image}
+                    title={products[i].title} 
+                    price={products[i].price} 
                   />
                  </div> 
                 );
-                })
+                }) 
                 }
               </li>
   			  </ul>

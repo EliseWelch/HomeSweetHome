@@ -2,18 +2,17 @@ import React from 'react';
 import './CartItemsCard.css';
 
 
-const CartItemsCard = ({ image, title, price, tag }) => {
+const CartItemsCard = ({ image, title, price }) => {
 	return (
 		<div className='cartItemsCard'>
 		    <div className='addedItems'>
-		      <img className='addedItemImage' alt='' src={ image } />
+		      <img className='addedItemPhoto' alt='' src={ image } />
 		      <h2>{ title }</h2>
 		      <p>{ price }</p>
-		      <p>{ tag }</p>
 		    </div>
 		</div>
 	); 
 }
-
+ 
 
 export default CartItemsCard;

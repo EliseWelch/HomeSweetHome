@@ -1,23 +1,18 @@
 .cartItemsCard {
-	display: flex;
-	justify-content: flex-start;
-	align-items: center;
-	width: 200px;
-	height: 250px;
-	text-align: center;
 	font-family: didot;
-	font-size: 10px;
-	margin: 15px;
+	font-size: 15px;
 };
 
+.cartItemsCard h2 {
+	margin: 0;
+}
 
+.cartItemsCard p {
+	margin: 0;
+}
 
-.addedItems {
-
-};
-
-
-.addedItemImage {
-	width: 100px;
-	height: 100px;
-};
+.cartItemsCard img {
+	width: 160px;
+	height: 160px;
+	margin: 0;
+}

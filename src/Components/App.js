@@ -4,17 +4,16 @@ import Insta from '../Containers/Insta';
 import Cart from '../Containers/Cart';
 import CardList from '../Containers/CardList';
 import items from '../items';
-import items2 from '../items2';
+import products from '../products';
 import frontcover from '../icons/frontcover.jpg';
 import CartSideBar from './CartSideBar';
-import Background from '../Containers/Background';
 
 class App extends Component {	
   constructor() {
     super();
     this.state = {
       cartSideBarOpen: false,
-      cartItems: { items2 }
+      cartItems: { products }
      }
   }
 
@@ -24,20 +23,12 @@ class App extends Component {
     })
   };
 
-  backgroundClickHandler = () => {
-    this.setState({ cartSideBarOpen: false })
-  };
-
   render() {
-    let background;
-
-    if (this.state.cartSideBarOpen) {
-      background = <Background click={this.backgroundClickHandler} />
-    }
-
     return(
       <div className='app'>
-        <CartSideBar show={this.state.cartSideBarOpen} add={this.state.cartItems}/>
+        <div className='cartContainer'>
+          <CartSideBar show={this.state.cartSideBarOpen} add={this.state.cartItems}/>
+        </div>
         <div className='header'>
           <Insta />
           <p className='logo'>HOME SWEET HOME</p>
@@ -45,7 +36,6 @@ class App extends Component {
         </div>
         <img alt='' src={frontcover} />
         <CardList items={ items } />
-        {background}
       </div>
     )
   }
