@@ -14,7 +14,7 @@ class App extends Component {
     this.state = {
       cartSideBarOpen: true,
       cartItems: { items },
-      items: { items },
+      items: [],
       searchfield: ''
      };
   };
