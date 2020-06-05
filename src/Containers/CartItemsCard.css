@@ -16,3 +16,13 @@
 	height: 160px;
 	margin: 0;
 }
+
+.addedItems {
+  display: flex;
+}
+
+.addedItems div {
+  display: flex;
+  flex-direction: column;
+  padding: 15px;
+}

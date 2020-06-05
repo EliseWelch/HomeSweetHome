@@ -7,8 +7,10 @@ const CartItemsCard = ({ image, title, price }) => {
 		<div className='cartItemsCard'>
 		    <div className='addedItems'>
 		      <img className='addedItemPhoto' alt='' src={ image } />
-		      <h2>{ title }</h2>
-		      <p>{ price }</p>
+		      <div className='cart-text'>
+		        <h2>{ title }</h2>
+		        <p>{ price }</p>
+		      </div>
 		    </div>
 		</div>
 	); 

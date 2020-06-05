@@ -2,13 +2,13 @@
  	display: flex;
  	align-items: center;
  	justify-content: center;
- 	flex-direction: column;    
+ 	flex-direction: column;  
 	width: 450px;
 	height: 650px;
 	border: solid darkgray 5px;
 	position: fixed;
 	background-color: white;
-	top: 0;
+	top: 0; 
 	right: 0;
 	z-index: 2;
 	transform: translateX(0%);
