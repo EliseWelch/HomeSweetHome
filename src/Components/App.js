@@ -14,8 +14,8 @@ class App extends Component {
     this.state = {
       cartSideBarOpen: true,
       cartItems: [],
-      items: items,
-      searchfield: ''
+      items: items, 
+      searchfield: '' 
      };
   };
 
@@ -30,7 +30,9 @@ class App extends Component {
   };
 
   addItemToCart = (product) => {
-    console.log('clicked', product);
+    console.log("clicked");
+    this.state.cartItems.push(product);
+    this.setState({cartItems: this.state.cartItems});
   };
 
   render() {  

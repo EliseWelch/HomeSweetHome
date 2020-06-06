@@ -20,10 +20,10 @@ const CartSideBar = (props) => {
                   return (
                   <div key={i} className='cartItemsLi'> 
                   <CartItemsCard
-                    image={props.add[i].image}
-                    title={props.add[i].title} 
-                    price={props.add[i].price} 
-                    units={props.add[i].units}
+                    image={user[i].image}
+                    title={user[i].title} 
+                    price={user[i].price} 
+                    units={user[i].units}
                   />
                  </div> 
                 );

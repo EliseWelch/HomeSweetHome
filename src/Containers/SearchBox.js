@@ -1,9 +1,10 @@
 import React from 'react';
+import './SearchBox.css';
 
 const SearchBox = ({ searchfield, searchChange }) => {
 	return (
-		<div style={{textAlign: 'center', display: 'flex', height: '35px', width: '50px'}}>
-		  <input 
+		<div className='inputBoxContainer'> 
+		  <input className='inputBox'
 		    type='search' 
 			placeholder='Search Items' 
 			onChange={searchChange}
