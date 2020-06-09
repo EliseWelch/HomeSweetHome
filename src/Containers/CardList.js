@@ -2,7 +2,7 @@ import React from 'react';
 import Card from './Card';
 import './CardList.css';
 
-const CardList = ({ items, addFunc }) => {
+const CardList = ({ items, addItem }) => {
 	return (
 	  <div className='cardlist'>
 		{
@@ -14,7 +14,7 @@ const CardList = ({ items, addFunc }) => {
 			    title={items[i].title} 
 			    price={items[i].price} 
 			    tag={items[i].tag}
-			    addFunc={addFunc}
+			    addItem={addItem}
 			  />
 			 </div> 
 			);

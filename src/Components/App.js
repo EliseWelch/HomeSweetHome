@@ -8,7 +8,7 @@ import frontcover from '../icons/frontcover.jpg';
 import CartSideBar from './CartSideBar';
 import SearchBox from '../Containers/SearchBox';
 
-class App extends Component {	
+class App extends Component { 
   constructor() {
     super();
     this.state = {
@@ -30,10 +30,32 @@ class App extends Component {
   };
 
   addItemToCart = (product) => {
-    console.log("clicked");
-    this.state.cartItems.push(product);
-    this.setState({cartItems: this.state.cartItems});
+    const existingProduct = this.state.cartItems.filter(p => p.title === product.title);
+
+    if (existingProduct.length > 0) {
+       const withoutExistingProduct = this.state.cartItems.filter(p => p.title !== product.title);
+       const updatedUnits = {
+        ...existingProduct[0],
+        units: existingProduct[0].units + product.units
+       }
+
+       this.state.cartItems.push(...withoutExistingProduct, updatedUnits)
+       this.setState({
+        cartItems: [...withoutExistingProduct, updatedUnits]
+       });
+    } else {
+      this.state.cartItems.push(product);
+      this.setState({
+        cartItems: [this.state.cartItems, product]
+      })
+    }
   };
+
+  addItemToCart2 = (product) => {
+    this.state.cartItems.push(product);
+    this.setState({cartItems: this.state.cartItems})
+  };
+
 
   render() {  
     const { items, searchfield } = this.state;
@@ -57,7 +79,7 @@ class App extends Component {
           <h2 className='search-items'>Search Items</h2>
           <SearchBox searchChange={this.onSearchChange}/>
         </div>
-        <CardList items={filteredItems} addFunc={this.addItemToCart}/>
+        <CardList items={filteredItems} addItem={this.addItemToCart}/>
       </div>
     )
   }
