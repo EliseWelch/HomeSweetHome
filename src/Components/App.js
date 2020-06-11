@@ -29,7 +29,7 @@ class App extends Component {
     this.setState({ searchfield: event.target.value })
   };
 
-  addItemToCart = (product) => {
+  addItemToCart2 = (product) => {
     const existingProduct = this.state.cartItems.filter(p => p.title === product.title);
 
     if (existingProduct.length > 0) {
@@ -51,9 +51,26 @@ class App extends Component {
     }
   };
 
-  addItemToCart2 = (product) => {
+  addItemToCart = (product) => {
     this.state.cartItems.push(product);
     this.setState({cartItems: this.state.cartItems})
+  };
+
+  totalItemsInCart = () => {
+    const totalItems = this.state.cartItems;
+    return totalItems.length;
+  };
+
+  totalAmountInCart = () => {
+    const x = 0;
+    const itemPrice = this.state.cartItems.map(p => p.price);
+    const totalItemsPrice = this.state.cartItems;
+
+    if (totalItemsPrice.length > 1) {
+      return  itemPrice[0] + itemPrice[1];
+    } else {
+      return x || itemPrice;
+    } 
   };
 
 
@@ -67,7 +84,7 @@ class App extends Component {
     return(
       <div className='app'>
         <div className='cartContainer'>
-          <CartSideBar show={this.state.cartSideBarOpen} add={this.state.cartItems}/>
+          <CartSideBar show={this.state.cartSideBarOpen} add={this.state.cartItems} total={this.totalItemsInCart} price={this.totalAmountInCart}/>
         </div>
         <div className='header'>
           <Insta />

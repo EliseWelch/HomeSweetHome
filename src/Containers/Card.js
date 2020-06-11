@@ -7,9 +7,9 @@ const Card = ({ image, title, price, tag, addItem }) => {
 		    <div className='card-items'>
 		      <img className='image' alt='' src={ image } />
 		      <h2>{ title }</h2>
-		      <p>{ price }</p>
+		      <p>${ price }</p>
 		      <p>{ tag }</p>
-		      <button className='card-btn' onClick={ () => addItem({ image, title, price, units: 1 }) }>
+		      <button className='card-btn' onClick={ () => addItem({ image, title, price, units: 1 })}>
 		      Add To Cart
 		      </button>
 		    </div>

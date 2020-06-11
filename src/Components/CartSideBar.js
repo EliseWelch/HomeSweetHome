@@ -5,6 +5,8 @@ import CartItemsCard from '../Containers/CartItemsCard';
 
 const CartSideBar = (props) => {  
     let sidebarClasses = 'sidebar';
+    let total = props.total;
+    let price = props.price;
 
     if (props.show === true) {
       sidebarClasses = 'sidebar open';
@@ -26,13 +28,13 @@ const CartSideBar = (props) => {
                     units={props.add[i].units}
                   />
                  </div> 
-                );
+                ); 
                 }) 
                 }
               </li>
           </ul> 
         </div>
-        <button className='cart-side-btn' type='button'>Go To Cart</button>
+        <h3 className='total-section'>Total { total() }  |  $ { price() }  </h3>
       </div>
     )
 };   

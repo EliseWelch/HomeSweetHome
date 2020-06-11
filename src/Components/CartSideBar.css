@@ -35,30 +35,6 @@
 	list-style-type: none;
 }
 
-.sidebar button {
-	position: fixed;
-	margin-bottom: 40px;
-	margin-left: 70px;
-	width: 300px;
-	height: 45px;
-	font-size: 25px;
-	border: 2px solid black;
-	font-weight: bold;
-	color: black;
-	font-family: didot;
-	text-align: center;
-	bottom: 0;
-	left: 0;
-}
-
-.sidebar button:focus {
-	outline: none;
-}
-
-.sidebar button:hover {
-	cursor: pointer;
-}
-
 .cartItemsList {
 	overflow: scroll;
 	width: 400px;
@@ -70,4 +46,12 @@
 .cartItemsLi {
 	margin-bottom: 5px;
 }
+
+.sidebar h3 {
+	font-family: didot;
+	text-align: center;
+	color: black;
+	font-size: 25px;
+	margin-bottom: -50px;
+};
 

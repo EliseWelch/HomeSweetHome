@@ -9,7 +9,7 @@ const CartItemsCard = ({ image, title, price, units }) => {
 		      <img className='addedItemPhoto' alt='' src={ image } />
 		      <div className='cart-text'>
 		        <h2>{ title }</h2>
-		        <p>{ price }</p>
+		        <p>${ price }</p>
 		        <p>{ units }</p>
 		      </div>
 		    </div>
