@@ -5,7 +5,9 @@ import './Insta.css';
 const Insta = () => {
 	return (
 		<div className='insta-btn-container'>
-		  <button className='insta-btn' href='/'></button>
+		  <a href='https://www.instagram.com/'>
+		  <button className='insta-btn'></button>
+		  </a>
 		</div>
 	)
 };

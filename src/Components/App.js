@@ -29,29 +29,25 @@ class App extends Component {
     this.setState({ searchfield: event.target.value })
   };
 
-  addItemToCart2 = (product) => {
-    const existingProduct = this.state.cartItems.filter(p => p.title === product.title);
-
-    if (existingProduct.length > 0) {
-       const withoutExistingProduct = this.state.cartItems.filter(p => p.title !== product.title);
-       const updatedUnits = {
-        ...existingProduct[0],
-        units: existingProduct[0].units + product.units
-       }
-
-       this.state.cartItems.push(...withoutExistingProduct, updatedUnits)
-       this.setState({
-        cartItems: [...withoutExistingProduct, updatedUnits]
-       });
+  addItemToCart = (product) => {
+    const existingProduct = this.state.cartItems.filter((p) => {
+      return p.title === product.title;
+    });
+    const withoutProduct = this.state.cartItems.filter((p) => {
+      return p.title !== product.title;
+    });
+   
+    if (existingProduct > 1) {
+      console.log(existingProduct);
+      this.state.cartItems.push(existingProduct);
+      this.setState({cartItems: this.state.cartItems})
     } else {
       this.state.cartItems.push(product);
-      this.setState({
-        cartItems: [this.state.cartItems, product]
-      })
+      this.setState({cartItems: this.state.cartItems})
     }
   };
 
-  addItemToCart = (product) => {
+  addItemToCart2 = (product) => {
     this.state.cartItems.push(product);
     this.setState({cartItems: this.state.cartItems})
   };
@@ -62,15 +58,14 @@ class App extends Component {
   };
 
   totalAmountInCart = () => {
-    const x = 0;
-    const itemPrice = this.state.cartItems.map(p => p.price);
-    const totalItemsPrice = this.state.cartItems;
-
-    if (totalItemsPrice.length > 1) {
-      return  itemPrice[0] + itemPrice[1];
+    const cartItems = this.state.cartItems;
+    if (!cartItems) {
+      return 0;
     } else {
-      return x || itemPrice;
-    } 
+      return this.state.cartItems.reduce((acc, item) => {
+        return acc + item.price;
+      }, 0);
+    }
   };
 
 
