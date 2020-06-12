@@ -7,6 +7,7 @@ import CardList from '../Containers/CardList';
 import frontcover from '../icons/frontcover.jpg';
 import CartSideBar from './CartSideBar';
 import SearchBox from '../Containers/SearchBox';
+import Background from '../Containers/Background';
 
 class App extends Component { 
   constructor() {
@@ -23,6 +24,11 @@ class App extends Component {
     this.setState((preState) => {
       return { cartSideBarOpen: !preState.cartSideBarOpen };
     })
+  };
+
+  backgroundClickHandler = () => {
+    console.log("clicked");
+    this.setState({ cartSideBarOpen: false });
   };
 
   onSearchChange = (event) => {
@@ -76,8 +82,15 @@ class App extends Component {
         item.tag.toLowerCase().includes(searchfield.toLowerCase());
     });
 
+    let background;
+
+    if (this.state.cartSideBarOpen) {
+      background = <Background close={this.backgroundClickHandler}/>
+    };
+
     return(
       <div className='app'>
+        { background }
         <div className='cartContainer'>
           <CartSideBar show={this.state.cartSideBarOpen} add={this.state.cartItems} total={this.totalItemsInCart} price={this.totalAmountInCart}/>
         </div>
