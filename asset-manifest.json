@@ -1,26 +1,26 @@
 {
   "files": {
-    "main.css": "/Home-Sweet-Home/static/css/main.f0b7ea8e.chunk.css",
-    "main.js": "/Home-Sweet-Home/static/js/main.54761116.chunk.js",
-    "main.js.map": "/Home-Sweet-Home/static/js/main.54761116.chunk.js.map",
-    "runtime-main.js": "/Home-Sweet-Home/static/js/runtime-main.029e1e4c.js",
-    "runtime-main.js.map": "/Home-Sweet-Home/static/js/runtime-main.029e1e4c.js.map",
-    "static/css/2.3c03f26f.chunk.css": "/Home-Sweet-Home/static/css/2.3c03f26f.chunk.css",
-    "static/js/2.cdf74ae5.chunk.js": "/Home-Sweet-Home/static/js/2.cdf74ae5.chunk.js",
-    "static/js/2.cdf74ae5.chunk.js.map": "/Home-Sweet-Home/static/js/2.cdf74ae5.chunk.js.map",
-    "index.html": "/Home-Sweet-Home/index.html",
-    "precache-manifest.49c8f41b025f56c88c5fe97ef8e17f9d.js": "/Home-Sweet-Home/precache-manifest.49c8f41b025f56c88c5fe97ef8e17f9d.js",
-    "service-worker.js": "/Home-Sweet-Home/service-worker.js",
-    "static/css/2.3c03f26f.chunk.css.map": "/Home-Sweet-Home/static/css/2.3c03f26f.chunk.css.map",
-    "static/css/main.f0b7ea8e.chunk.css.map": "/Home-Sweet-Home/static/css/main.f0b7ea8e.chunk.css.map",
-    "static/js/2.cdf74ae5.chunk.js.LICENSE.txt": "/Home-Sweet-Home/static/js/2.cdf74ae5.chunk.js.LICENSE.txt",
-    "static/media/frontcover.jpg": "/Home-Sweet-Home/static/media/frontcover.04ee0208.jpg"
+    "main.css": "/HomeSweetHome/static/css/main.f0b7ea8e.chunk.css",
+    "main.js": "/HomeSweetHome/static/js/main.8834c63b.chunk.js",
+    "main.js.map": "/HomeSweetHome/static/js/main.8834c63b.chunk.js.map",
+    "runtime-main.js": "/HomeSweetHome/static/js/runtime-main.e523f088.js",
+    "runtime-main.js.map": "/HomeSweetHome/static/js/runtime-main.e523f088.js.map",
+    "static/css/2.3c03f26f.chunk.css": "/HomeSweetHome/static/css/2.3c03f26f.chunk.css",
+    "static/js/2.cdf74ae5.chunk.js": "/HomeSweetHome/static/js/2.cdf74ae5.chunk.js",
+    "static/js/2.cdf74ae5.chunk.js.map": "/HomeSweetHome/static/js/2.cdf74ae5.chunk.js.map",
+    "index.html": "/HomeSweetHome/index.html",
+    "precache-manifest.627e0377ebef98de5675fe6ddb78c357.js": "/HomeSweetHome/precache-manifest.627e0377ebef98de5675fe6ddb78c357.js",
+    "service-worker.js": "/HomeSweetHome/service-worker.js",
+    "static/css/2.3c03f26f.chunk.css.map": "/HomeSweetHome/static/css/2.3c03f26f.chunk.css.map",
+    "static/css/main.f0b7ea8e.chunk.css.map": "/HomeSweetHome/static/css/main.f0b7ea8e.chunk.css.map",
+    "static/js/2.cdf74ae5.chunk.js.LICENSE.txt": "/HomeSweetHome/static/js/2.cdf74ae5.chunk.js.LICENSE.txt",
+    "static/media/frontcover.jpg": "/HomeSweetHome/static/media/frontcover.04ee0208.jpg"
   },
   "entrypoints": [
-    "static/js/runtime-main.029e1e4c.js",
+    "static/js/runtime-main.e523f088.js",
     "static/css/2.3c03f26f.chunk.css",
     "static/js/2.cdf74ae5.chunk.js",
     "static/css/main.f0b7ea8e.chunk.css",
-    "static/js/main.54761116.chunk.js"
+    "static/js/main.8834c63b.chunk.js"
   ]
 }
